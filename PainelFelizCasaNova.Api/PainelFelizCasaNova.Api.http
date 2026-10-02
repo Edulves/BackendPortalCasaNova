@@ -1,0 +1,6 @@
+@PainelFelizCasaNova.Api_HostAddress = http://localhost:5136
+
+GET {{PainelFelizCasaNova.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,46 @@
+# ─────Pré-compilados / dependências (NuGet)─────
+*.nuget*
+*.dll
+packages/
+# Se o projeto usar NuGet local, descomente:
+# !src/**/libs/*.dll
+
+# ─────Pasta de build do .NET─────
+bin/
+obj/
+
+# ─────VS Code / JetBrains / VS / Windows / macOS─────
+.vscode/
+.idea/
+*.iml
+.vs/
+*.swp
+*.swo
+*~
+
+# ─────Arquivos do SO─────
+Thumbs.db
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─────Logs─────
+*.log
+
+# ─────Configurações locais / sensíveis─────
+.env
+.env.local
+*.local.*
+appsettings.local.json
+appsettings.json
+
+# ─────NuGet lock / cache (opcional)─────
+.project.nuget.cache
+project.nuget.cache
+
+# ─────Netlify (se usado por deploy)─────
+.netlify
+
+# ─────Arquivos temporários de texto / editor─────
+*.bak
+*.tmp
