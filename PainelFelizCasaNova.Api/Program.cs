@@ -127,11 +127,10 @@ var app = builder.Build();
 app.UseErrorHandlingMiddleware();
 app.UseRateLimitMiddleware();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/swagger/v1/swagger.json", "Painel v1"));
-}
+
+app.UseSwagger();
+app.UseSwaggerUI(opt => opt.SwaggerEndpoint("/swagger/v1/swagger.json", "Painel v1"));
+
 
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
